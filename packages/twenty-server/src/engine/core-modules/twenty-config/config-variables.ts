@@ -605,7 +605,7 @@ export class ConfigVariables {
     type: ConfigVariableType.STRING,
   })
   @ValidateIf((env) => env.IS_MULTIWORKSPACE_ENABLED)
-  DEFAULT_SUBDOMAIN = 'app';
+  DEFAULT_SUBDOMAIN?: string;
 
   @ConfigVariablesMetadata({
     group: ConfigVariablesGroup.Other,
